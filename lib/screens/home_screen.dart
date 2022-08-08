@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:petology/screens/Login_screen.dart';
 import 'package:petology/screens/about_us_screen.dart';
+import 'package:petology/screens/adaption_screen.dart';
 import 'package:petology/screens/request_screen.dart';
 import 'package:petology/screens/signup_screen.dart';
 import 'package:petology/shared/styles/colors.dart';
@@ -80,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                     child: AboutUsScreen(),
                   ),
                   Center(
-                    child: Text('second page'),
+                    child: AdaptionScreen(),
                   ),
                   Center(
                     child: Text('third page'),
