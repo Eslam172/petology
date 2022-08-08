@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Tab(
                   child: Text(
-                    'Categories',
+                    'Adaption',
                     style: TextStyle(
                         color: Theme.of(context).primaryColor, fontSize: 12),
                   ),
