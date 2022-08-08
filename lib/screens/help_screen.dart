@@ -122,7 +122,7 @@ class HelpScreen extends StatelessWidget {
                               ),
                             ),
                             const Spacer(),
-                            Icon(Icons.arrow_drop_down,color: primaryColor,)
+                            Icon(Icons.location_on_outlined,color: primaryColor,)
                           ],
                         ),
                       ),
