@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:petology/screens/Login_screen.dart';
 import 'package:petology/screens/home_screen.dart';
 import 'package:petology/screens/signup_screen.dart';
+import 'package:petology/shared/styles/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
-        primaryColor: Color(0xff492F24) ,
+        primaryColor: primaryColor ,
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xff56392D),
           systemOverlayStyle: SystemUiOverlayStyle(
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           )
         )
       ),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }
