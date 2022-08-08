@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:petology/screens/Login_screen.dart';
 import 'package:petology/screens/about_us_screen.dart';
+import 'package:petology/screens/request_screen.dart';
+import 'package:petology/screens/signup_screen.dart';
 import 'package:petology/shared/styles/colors.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,7 +29,12 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               width: 15,
             ),
-            Center(child: InkWell(onTap: () {}, child: const Text('Sing up'))),
+            Center(child: InkWell(onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SignupScreen()));
+            }, child: const Text('Sing up'))),
           ],
         ),
         body: DefaultTabController(
@@ -79,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                     child: Text('third page'),
                   ),
                   Center(
-                    child: Text('fourth page'),
+                    child: RequestScreen(),
                   ),
                 ],
               ))

@@ -10,6 +10,7 @@ class SignupScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
