@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:petology/screens/Login_screen.dart';
+import 'package:petology/screens/about_us_screen.dart';
+import 'package:petology/shared/styles/colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -32,7 +34,9 @@ class HomeScreen extends StatelessWidget {
           length: 4,
           child: Column(
             children: [
-              TabBar(tabs: [
+              TabBar(
+                indicatorColor: primaryColor,
+                  tabs: [
                 Tab(
                   child: Text(
                     'About us',
@@ -66,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                   child: TabBarView(
                 children: [
                   Center(
-                    child: Text('first page'),
+                    child: AboutUsScreen(),
                   ),
                   Center(
                     child: Text('second page'),
